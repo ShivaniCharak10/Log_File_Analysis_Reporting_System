@@ -101,7 +101,7 @@ pip install -r requirements.txt
 
 ---
 
-Usage
+## Usage
 1. Command Line Interface (CLI)
 
 python cli.py --file access.log
