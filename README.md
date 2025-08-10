@@ -98,24 +98,24 @@ streamlit run app.py
 
 ## Database Schema
 
-CREATE TABLE IF NOT EXISTS logs (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    ip_address VARCHAR(45),
-    timestamp DATETIME,
-    request_method VARCHAR(10),
-    resource TEXT,
-    status_code INT,
-    response_size INT,
-    request_time DATETIME
-);
+- **CREATE TABLE IF NOT EXISTS logs (
+- **id INT AUTO_INCREMENT PRIMARY KEY,
+- **ip_address VARCHAR(45),
+- **timestamp DATETIME,
+- **request_method VARCHAR(10),
+- **resource TEXT,
+- **status_code INT,
+- **response_size INT,
+- **request_time DATETIME
+- **);
 
 ---
 
 ## Future Enhancements
-Real-time log monitoring with auto-refresh in dashboard.
-Role-based authentication for dashboard access.
-Export analytics as PDF or CSV directly from dashboard.
-Support for additional log formats like JSON & XML.
-Integration with cloud databases for scalability.
+- **Real-time log monitoring with auto-refresh in dashboard.
+- **Role-based authentication for dashboard access.
+- **Export analytics as PDF or CSV directly from dashboard.
+- **Support for additional log formats like JSON & XML.
+- **Integration with cloud databases for scalability.
 
 ```bash
