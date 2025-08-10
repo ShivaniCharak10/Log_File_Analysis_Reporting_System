@@ -18,7 +18,7 @@ The parsed data is stored in a MySQL database for efficient querying, and users 
 ---
 
 ## Introduction / Overview
-The ** Log File Analysis & Reporting System** is a Python-based tool designed to parse, store, analyze, and visualize log data efficiently.  
+The Log File Analysis & Reporting System is a Python-based tool designed to parse, store, analyze, and visualize log data efficiently.  
 It supports both **command-line interface (CLI)** operations and a **Streamlit-powered dashboard** for interactive data exploration.
 
 This project can be used for monitoring application logs, tracking request patterns, identifying errors, and generating reports from log files in a structured way.
