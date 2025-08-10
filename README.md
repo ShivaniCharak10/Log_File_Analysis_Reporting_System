@@ -120,14 +120,14 @@ streamlit run app.py
 ## Database Schema
 
 CREATE TABLE IF NOT EXISTS logs (
-id INT AUTO_INCREMENT PRIMARY KEY,
-ip_address VARCHAR(45),
-timestamp DATETIME,
-request_method VARCHAR(10),
-resource TEXT,
-status_code INT,
-response_size INT,
-request_time DATETIME
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    ip_address VARCHAR(45),
+    timestamp DATETIME,
+    request_method VARCHAR(10),
+    resource TEXT,
+    status_code INT,
+    response_size INT,
+    request_time DATETIME
 );
 
 ---
