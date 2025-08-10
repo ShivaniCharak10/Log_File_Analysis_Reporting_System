@@ -1,4 +1,8 @@
 # Log Analyzer CLI & Dashboard
+The Log File Analysis & Reporting System is a Python-based application with both Command-Line Interface (CLI) and Streamlit Dashboard for analyzing Apache-style web server logs.
+
+It reads raw log files and extracts structured information such as IP addresses, timestamps, HTTP methods, URLs, status codes, and user-agent details.
+The parsed data is stored in a MySQL database for efficient querying, and users can generate both tabular reports via CLI and interactive visualizations via Streamlit.
 
 ## Table of Contents
 - [Introduction / Overview](#introduction--overview)
@@ -14,7 +18,7 @@
 ---
 
 ## Introduction / Overview
-The **Log Analyzer CLI & Dashboard** is a Python-based tool designed to parse, store, analyze, and visualize log data efficiently.  
+The ** Log File Analysis & Reporting System** is a Python-based tool designed to parse, store, analyze, and visualize log data efficiently.  
 It supports both **command-line interface (CLI)** operations and a **Streamlit-powered dashboard** for interactive data exploration.
 
 This project can be used for monitoring application logs, tracking request patterns, identifying errors, and generating reports from log files in a structured way.
@@ -58,11 +62,10 @@ This project can be used for monitoring application logs, tracking request patte
 └─────────────────────────────┘
 
 
-
 ---
 
 ## Technologies Used
-- **Python 3.x**
+- **Python**
 - **Streamlit** – Interactive dashboard
 - **MySQL** – Data storage
 - **Pandas** – Data analysis
@@ -77,8 +80,10 @@ This project can be used for monitoring application logs, tracking request patte
 - MySQL server installed & running
 - MySQL user credentials configured in `config.ini` or `config.json`
 - Required Python packages:
-```bash
+
 pip install -r requirements.txt
+
+---
 
 Usage
 1. Command Line Interface (CLI)
@@ -89,7 +94,9 @@ python cli.py --file access.log
 
 streamlit run app.py
 
-Database Schema
+---
+
+## Database Schema
 
 CREATE TABLE IF NOT EXISTS logs (
     id INT AUTO_INCREMENT PRIMARY KEY,
@@ -102,9 +109,13 @@ CREATE TABLE IF NOT EXISTS logs (
     request_time DATETIME
 );
 
-Future Enhancements
+---
+
+## Future Enhancements
 Real-time log monitoring with auto-refresh in dashboard.
 Role-based authentication for dashboard access.
 Export analytics as PDF or CSV directly from dashboard.
 Support for additional log formats like JSON & XML.
 Integration with cloud databases for scalability.
+
+```bash
