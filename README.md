@@ -47,37 +47,37 @@ This project can be used for monitoring application logs, tracking request patte
 ## System Architecture
           ┌────────────────────┐
           │     Log Files      │
-          │ 
-          └─────────┬───────────┘
+          │                    |
+          └─────────┬──────────┘
                     │
                     ▼
           ┌────────────────────┐
-          │ Log Parser          │
-          │                     │
-          └─────────┬───────────┘
+          │    Log Parser      │
+          │                    │
+          └─────────┬──────────┘
                     │
                     ▼
           ┌────────────────────┐
           │ Data Normalization │
-          │                     │
-          └─────────┬───────────┘
+          │                    │
+          └─────────┬──────────┘
                     │
                     ▼
           ┌────────────────────┐
-          │ MySQL Database     │
+          │  MySQL Database    │
           │                    │
-          │                     │
-          └─────────┬───────────┘
+          │                    │
+          └─────────┬──────────┘
                     │
                     ▼
           ┌────────────────────┐
           │ Streamlit Dashboard│
-          │     
-          └─────────┬───────────┘
+          │                    |
+          └─────────┬──────────┘
                     │
                     ▼
           ┌────────────────────┐
-          │  Output            │
+          │       Output       │
           │                    │
           └────────────────────┘
 
@@ -113,7 +113,7 @@ python cli.py --file access.log
 
 2. Streamlit Dashboard
 
-streamlit run app.py
+python main.py dashboard
 
 ---
 
