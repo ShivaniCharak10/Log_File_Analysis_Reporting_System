@@ -40,3 +40,4 @@ class DBHandler:
             self.cursor.close()
         if self.connection:
             self.connection.close()
+
