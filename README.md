@@ -73,13 +73,8 @@ This project can be used for monitoring application logs, tracking request patte
           ┌────────────────────┐
           │ Streamlit Dashboard│
           │                    |
-          └─────────┬──────────┘
-                    │
-                    ▼
-          ┌────────────────────┐
-          │       Output       │
-          │                    │
-          └────────────────────┘
+          └──────────────────  ┘
+                  
 
 
 
